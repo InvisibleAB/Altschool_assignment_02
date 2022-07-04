@@ -33,14 +33,12 @@ assignment.sumOfNumbers = sumOfNumbers;
  */
 sumOfEvenNumb=0
 x=0
+function evenNumbers(value, index, array) {
+  if (value % 2==0){
+  	sumOfEvenNumb+=value}
+}
 function countEvenNumbers(arrayOfNumbers) {
-    while(x< arrayOfNumbers.length){
-      numb = arrayOfNumbers[x]
-      if (numb %2 == 0){
-        sumOfEvenNumb+=numb
-      }
-      x++
-    }
+    arrayOfNumbers.forEach(evenNumbers)
     return sumOfEvenNumb
 }
 assignment.countEvenNumbers = countEvenNumbers;
