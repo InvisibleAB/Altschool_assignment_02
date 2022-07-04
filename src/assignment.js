@@ -36,7 +36,7 @@ x=0
 function countEvenNumbers(arrayOfNumbers) {
     while(x< arrayOfNumbers.length){
       numb = arrayOfNumbers[x]
-      if (number%2 == 0){
+      if (numb %2 == 0){
         sumOfEvenNumb+=numb
       }
       x++
