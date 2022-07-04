@@ -14,12 +14,9 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 sumOfNum = 0
-index=0
 function sumOfNumbers(arrayOfNumbers) {
-    
-  while(index < arrayOfNumbers.length){
-    sumOfNum+=arrayOfNumbers[index]
-    index++
+    for (let x in arrayOfNumbers){
+      sumOfNum+=arrayOfNumbers[x]
     }
     return sumOfNum;
 }
